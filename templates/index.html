@@ -1,0 +1,7 @@
+$def with (form)
+
+<form name="paste" method="post">
+  $if not form.valid: <p class="error">Something's wrong..</p>
+  $:form.render()
+  <input type="submit" />
+</form>
